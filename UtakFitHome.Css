@@ -1,0 +1,46 @@
+body{   
+    margin:0px;
+    height: 0px 2000px;
+    padding:0px;
+    background: rgb(0,0,0);
+    background: linear-gradient(42deg, rgba(0,0,0,1) 0%, rgba(70,62,14,1) 42%, rgba(23,84,32,1) 100%); 
+}
+
+
+
+header{display: flex;justify-content: flex-end;margin: 0px;padding: 0px;height: 50px; background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(96,96,96,1) 100%);}
+
+
+.morals{color: white;font-family: arial;font-size: 25px;height: 0px;}
+
+.slideshow {display:flex;}
+
+#train {margin 0px 5px 0px 5px}
+
+.square{
+    display:flex;width: 100%;
+}
+
+.pagenavigation{
+    text-align: center; 
+    margin: 50px 0px 0px 0px;width:33%;height: 300px;}
+
+
+.button{background-color:  #ff2000 ;
+    font-size: 30px;
+    font-family: arial;
+    color:  rgb(147,147,147); color: linear-gradient(42deg, rgba(147,147,147,1) 25%, rgba(225,246,228,1) 64%, rgba(147,147,147,1) 100%); }
+
+.a{
+    margin: 0px;width:33%;height: 300px;}
+}
+
+.yo{
+    margin: 0px;width:33%;height: 300px;}
+}
+
+p {font-display: wrap; font-size: 30px; background-color: lightgray}
+
+label{width: 50%;font-family: Arial, Helvetica, sans-serif;font-size: 30px;}
+
