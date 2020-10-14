@@ -3,46 +3,92 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="UtakFitHome.Css">
-<script>src="utakfithome.java"</script>
+    <title>UTAK FITNESS</title>
 </head>
 
 <body>
+
     <header>
         <h1 class="morals">"Keep moving forward"-Rocky Balboa</h1>
     </header>
 
-    <div class="slideshow">
 
-    <img class="mySlides" src="food.JPG">
-    <img class="mySlides" id="train" src="train.JPG">
-    <img class="mySlides" src="lifestyle.JPG">
+    <div class="imagecontainer" >
+        <img class="mySlides" src="train.JPG" >
+        <img class="mySlides" src="eat.JPG" >
+        <img class="mySlides" src="motivation.jpg" >
+      </div>
+
+<!-- 
+    <div class=imagecontainer>
+    <img id="eat" src="train.JPG" style="width:1000px">
+    <button class="slidebutton"
+    onclick="document.getElementById('eat') .src='train.JPG'">
+    </button>
+    <button class="slidebutton"
+    onclick="document.getElementById('eat') .src='motivation.jpg'">
+    </button>
+    <button class="slidebutton"
+    onclick="document.getElementById('eat') .src='eat.JPG'"></button>
+    </div>s
+   -->
+
 
     
-</div>
 
-    <div class="square">
+     
+        <div class="a">
+         <div class=logoholder>   <img class="logo1" src="logo1.PNG"></div>
+        
+        </div>
 
         <div class="pagenavigation">
-           <b><label class="button">About</label><br><br>
-            <label class ="button">Services</label><br><br>
-            <label class="button">Prices</label><br><br>
-            <label class="button">Contact Utah</label></b> 
-        </div>
+          <div class="buttonholder">  <b>
+             <a href="www.google.com"><div class=box><label class="button">About</label></div></a>
+            
+                <div class=box> <label class ="button">Services</label></div>
+            
+                <div class=box><label class="button">Prices</label></div>
+            
+                <div class=box><label class="button">Contact Utah</label></div></b> 
+            </div>
+         
+            </div>
+ 
 
-        <div class="a">
-           
-        </div>
+        <div class="Intro">
 
-        <div class="yo">
-            <p>"The way you served the masses, is by doing so one at a time"></p>
-        </div>
+            <img class=Profile src="profile.jpg">
+            <br>
+            <b><p>"Hi! My name is Utah Mann. I'm an ACE Certified Personal Trainer & Group Fitness Instructor. I have worked with and help many people discover and reach their fitness potential, from San Diego to London to Auckland. Click more to discover why I'm the right trainer for you!"</p>
+            </b>
+            </div>
 
-    </div>
+    
 
     <Section class="bottom">
         <label></label>
 
     </Section>
+
+
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
 </body>
 
 </html>
