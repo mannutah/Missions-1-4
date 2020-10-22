@@ -20,20 +20,45 @@ justify-content: center;
 
 header{
   display: flex;
-  justify-content: flex-end;
   margin: 0px;
   padding: 0px;
   height: 50px; 
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(96,96,96,1) 100%);}
+  background-color: black;
+}
 
+.homeholder{
+  width: 100%;
+height: 50px;
+justify-content: ;
 
-.morals{
-  color: white;
-  font-family: arial;
-  font-size: 25px;
-  height: 0px;}
+}
 
+.Home {
+  position: relative;
+  bottom: 19px;
+  border-radius: 50%;
+width: 90px;
+height: 90px;
+
+}
+
+.motto{
+display: flex;
+justify-content: flex-end;
+height: 50px;
+width: 100%;
+
+}
+.headerbutton{
+  color:white;
+  width:15%;
+  height: 80%;
+margin: 5px;
+font-family: Arial, Helvetica, sans-serif;
+background-color: black;
+border-radius: 50%;
+
+}
 
 .square{
     display:flex;
@@ -44,7 +69,12 @@ header{
 .imagecontainer {
   display: flex;
   justify-content: center;
+ 
   
+}
+
+.mySlides{
+  box-shadow:20px 20px 50px 15px purple
 }
 
 .imagebuttons {
@@ -53,8 +83,6 @@ header{
   border-radius: 50%;
 }
 
-#eat {box-shadow: black;
-}
 
 .slidebutton {
   margin:150px 0px 150px 0px;
@@ -71,26 +99,28 @@ header{
     height: 300px;
     width:100%;
   }
-  .buttonholder{
-
+  .buttonholder{ 
 
   }
 .box{
   opacity: 90%;
   justify-content: center;
-  background: rgb(0,0,0);
-  background: linear-gradient(42deg, rgba(0,0,0,1) 7%, rgba(3,110,18,1) 100%, rgba(147,147,147,1) 100%); 
+  background-color: red;
   color: white;
   margin: 20px;
-  border: 5px solid black;
-  
+  box-shadow:20px 20px 50px 15px black;
+
+ 
 }
 
 .button{
   height:10px;
     font-size: 50px;
     font-family: arial;
-    color:  white;}
+    color:  white;
+    
+
+  }
 
 .a {display: flex;
   justify-content: center;
@@ -106,24 +136,197 @@ header{
  ;
 }
 
-.Intro {justify-content: center;
+.Intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
     width: 100%;
     margin: 10px;
+    height: 25%;
   
 }
-.Profile{margin: 10px 0px 0px 25%;
+.Profile{margin: 30px 42% 0px 32%;
   border-radius: 60%;
   border: 1px solid black;
-Width: 50%;
-height:25%;
+Width: 35%;
+height:45%;
 
 }
 
-p {font-display: wrap;
+p {
+  margin: 20px 30% 0px 35%;
+  padding: 5px;
+  font-display: wrap;
+  color: white;
   font-size: 20px; 
   background: transparent 90%;
-  background-color: lightgray;
+  background-color: black;
+  border: 1px solid white;
+  width: 30%;
 }
 
 label{width: 50%;font-family: Arial, Helvetica, sans-serif;font-size: 30px;}
 
+.bmrholder
+{margin: 10% 0px 0px 0px;
+
+  display: flex;
+  flex-direction: row;
+  width:100%;
+
+}
+h1{
+  background:#e5e5e5;
+  margin:0px 55% 5px 0px;
+  border:1px solid black;
+}
+.bmrcalculator{
+  padding: 5px;
+  background: rgb(255,0,0);
+  background: radial-gradient(circle, rgba(255,0,0,1) 21%, rgba(255,233,0,1) 100%); 
+border: 2px solid black;  
+}
+
+.bmrbutton{
+ background: #e5e5e5;
+ border: 1px solid black;
+
+}
+
+/* About Page Begins Now */
+.Titleholder {
+width: 100%;
+Height: 10%;
+
+
+}
+.title {
+  font-size: large;
+  Margin: 10px;
+Width: 25%;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.aboutprofile {
+  width: 100%;
+  height: 1000px;
+display: flex;
+flex-direction: column;
+}
+
+.aboutprofileimg {
+margin: 0px 0px 0px 37%;
+ width: 25%;
+  height: 45%;
+  box-shadow:20px 20px 50px 15px purple;
+}
+
+.aboutwords {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 80px 0% 0px 20%;
+  width: 60%;
+  border: 1px solid purple;
+  background-color: black ;
+  opacity: 80%;
+  box-shadow:20px 20px 50px 15px purple;
+}
+
+/* Services Page Begins Now */
+
+.servicetitleholder {
+  width: 100%;
+  Height: 10%;
+  }
+
+  .servicetitle {
+    font-size: large;
+    Margin: 10px;
+  Width: 30%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  
+ }
+
+ .serviceholder{
+   width: 100%;
+   Display: flex;
+   flex-direction: row;
+ }
+  
+ .service {
+   margin: 15px;
+width: 33%;
+
+
+
+ }
+
+ .train2 {
+width: 100%;
+height: 80%;
+box-shadow: purple 5px 5px 5px 5px;
+
+
+ }
+
+ .eat2{
+
+  width: 100%;
+  height: 80%;
+  box-shadow: purple 5px 5px 5px 5px;
+ }
+
+ .live2{
+
+  width: 100%;
+  height: 80%;
+  box-shadow: purple 5px 5px 5px 5px;
+ }
+
+ .servicetextholder{
+  width: 100%;
+  Display: flex;
+  flex-direction: row;
+
+}
+
+.explination {
+  width: 33%;
+  position: relative;
+  bottom: 120px;
+  
+  }
+
+ .train2exp{
+   padding: 5px;
+  opacity: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+   width: 95%;
+   background-color: black;
+   margin: 0px 0px 0px 10px;
+   text-align: center;
+   
+  
+ }
+
+ .train2exp2{
+  margin: 0px 0px 0px 10px;
+   width: 95%;
+   background-color: gray;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .train2exp3 {
+width: 95%;
+margin: 0px;
+background-color: white;
+color:black;
+opacity: 100%;
+font-family: Arial, Helvetica, sans-serif;
+margin: 0px 0px 0px 10px;
+ }

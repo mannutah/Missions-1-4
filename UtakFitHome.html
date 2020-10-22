@@ -9,7 +9,17 @@
 <body>
 
     <header>
-        <h1 class="morals">"Keep moving forward"-Rocky Balboa</h1>
+       <div class=homeholder>
+           <img class=Home src="home.png">
+        </div>
+
+      <div class=motto>
+        <button class=headerbutton><b>Home</b></button>
+        <button class=headerbutton><b>About</b></button>
+        <button class=headerbutton><b>Services</b></button>
+        <button class=headerbutton><b>Contact</b></button>
+    </div>
+
     </header>
 
 
@@ -56,14 +66,60 @@
             </div>
  
 
-        <div class="Intro">
+       <!--- <div class="Intro">
 
-            <img class=Profile src="profile.jpg">
+            <img class=Profile src="profile2.jpg">
             <br>
-            <b><p>"Hi! My name is Utah Mann. I'm an ACE Certified Personal Trainer & Group Fitness Instructor. I have worked with and help many people discover and reach their fitness potential, from San Diego to London to Auckland. Click more to discover why I'm the right trainer for you!"</p>
+            <b><p>  "Hi! My name is Utah Mann. I'm an ACE Certified Personal Trainer & Group Fitness Instructor. I have worked with and help many people discover and reach their fitness potential, from San Diego to London to Auckland. Click more to discover why I'm the right trainer for you!"</p>
             </b>
             </div>
+        -->
+        <div class="bmrholder">
+        
+            <div class=bmrcalculator>
+                <h1>BMR Calculator:</h1> 
+                
+<!-- corrected spacing and "" of class names here -->
+<div class="bmrcalculator">
+    <label class="bmrbutton">Enter weight(kg)</label>
+    <input type="number" id="weight"></input>
+    <br><br>
+    <!-- changed the layout here - compare to what you sent me in teams -->
+    <label class="bmrbutton">Enter Height(cm)</label>
+    <input type="number" id="height"></input>
+    <br><br>
+    <label class="bmrbutton">Enter Age</label>
+    <input type="number" id="age"></input>
+    <br><br>
+    <button onclick="bmrcalculator()" type="submit">Your BMR</button>
+    <!-- here ^ you had written functionbmrcalculator
+    you only need to include the name of the function -->
+    </div>
+    <div class=bmrcalculator>
+        <h1>BMR Calculator:</h1> 
+        
+<!-- corrected spacing and "" of class names here -->
+<div class="bmrcalculator">
+<label class="bmrbutton">Enter weight(kg)</label>
+<input type="number" id="weight"></input>
+<br><br>
+<!-- changed the layout here - compare to what you sent me in teams -->
+<label class="bmrbutton">Enter Height(cm)</label>
+<input type="number" id="height"></input>
+<br><br>
+<label class="bmrbutton">Enter Age</label>
+<input type="number" id="age"></input>
+<br><br>
+<button onclick="bmrcalculator()" type="submit">Your BMR</button>
+<!-- here ^ you had written functionbmrcalculator
+you only need to include the name of the function -->
+</div>
+    
+</div>
+    
+    
 
+            </div>
     
 
     <Section class="bottom">
@@ -72,7 +128,7 @@
     </Section>
 
 
-
+        
     <script>
         var myIndex = 0;
         carousel();
@@ -88,6 +144,20 @@
           x[myIndex-1].style.display = "block";  
           setTimeout(carousel, 2000); // Change image every 2 seconds
         }
+
+        function bmrcalculator() {
+ 
+ var weight = document.getElementById("weight").value; //added .value
+ var height = document.getElementById("height").value; //also added capitals where needed
+ var age = document.getElementById("age").value;
+ var num1 = (10 * weight);
+ var num2 = (6.25 * height);
+ var num3 = (5 * age);
+ 
+ var protbmr = num1 + num2; //you forgot semi colon here
+ var bmr = protbmr - num3;
+ document.write(bmr);
+ }
         </script>
 </body>
 
